@@ -1,0 +1,44 @@
+# Flow-level preset for the earlier ACS/CLEF/UOB/USPTO campaign.
+# export DATA_ROOT=/path/to/chemcv_data/real
+# Native glyphs are now pinned to bundled fonts; this does not claim byte-for-byte
+# reconstruction of historical Arial/Times outputs or historical split IDs.
+inputs:
+  - name: acs
+    csv: ${DATA_ROOT}/acs.csv
+    image_column: file_path
+    image_root: ${DATA_ROOT}/..
+    font_families: [Arial]
+  - name: CLEF
+    csv: ${DATA_ROOT}/CLEF.csv
+    image_column: file_path
+    image_root: ${DATA_ROOT}/..
+    font_families: [Arial]
+  - name: UOB
+    csv: ${DATA_ROOT}/UOB.csv
+    image_column: file_path
+    image_root: ${DATA_ROOT}/..
+    font_families: [Arial]
+  - name: USPTO
+    csv: ${DATA_ROOT}/USPTO.csv
+    image_column: file_path
+    image_root: ${DATA_ROOT}/..
+    font_families: [Times]
+exclude_csv: [staker.csv]
+output: previous_workflow_output
+seed: 20261113
+workers: 8
+render:
+  canvas_size: 640
+  match_reference: true
+color:
+  count: 1000
+  dummy_probability: 0.5
+split:
+  validation_fraction: 0.1
+  seed: 20261113
+charge_augmentation:
+  count: 1200
+  seed: 20261114
+balance:
+  enabled: true
+  charged_fraction: 0.25

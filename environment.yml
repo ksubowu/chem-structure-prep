@@ -1,0 +1,12 @@
+name: chem-prep
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - cairo
+  - fontconfig
+  - libstdcxx-ng
+  - pip:
+      - -r requirements.lock.txt
+      - -e .

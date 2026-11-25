@@ -1,0 +1,25 @@
+# All paths resolve relative to this YAML; no original workspace is required.
+inputs:
+  - name: demo
+    csv: demo.csv
+    smiles_column: SMILES
+    id_column: image_id
+output: dataset
+seed: 20261113
+workers: 2
+render:
+  canvas_size: 640
+  font_families: [DejaVu Sans, DejaVu Serif]
+color:
+  count: 8
+  dummy_probability: 0.5
+split:
+  validation_fraction: 0.1
+  seed: 20261113
+charge_augmentation:
+  count: 16
+  seed: 20261114
+  canvas_size: 640
+balance:
+  enabled: true
+  charged_fraction: 0.25

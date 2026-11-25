@@ -1,0 +1,16 @@
+# SMILES-only CSV; no reference images or model files needed.
+inputs:
+  - name: my_dataset
+    csv: demo.csv
+    smiles_column: SMILES
+    id_column: image_id
+output: minimal_output
+workers: 2
+render:
+  canvas_size: 640
+color:
+  count: 0
+charge_augmentation:
+  count: 0
+balance:
+  enabled: false

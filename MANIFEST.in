@@ -1,0 +1,8 @@
+recursive-include chem_prep/assets *
+recursive-include chem_prep/_vendor/indigo/lib *.so
+recursive-include licenses *
+include README.md
+recursive-include tests *.py *.json *.svg
+
+include LICENSE
+include THIRD_PARTY_NOTICES.md

@@ -1,0 +1,16 @@
+# Tested with CPython 3.12 on Linux x86_64; system Cairo/fontconfig are also required.
+numpy==1.26.4
+scipy==1.17.1
+Pillow==12.2.0
+opencv-python-headless==4.10.0.84
+CairoSVG==2.9.0
+cairocffi==1.7.1
+fonttools==4.66.1
+networkx==3.7
+PyYAML==6.0.2
+cffi==2.1.1
+pycparser==3.12
+cssselect2==0.9.0
+tinycss2==1.5.1
+defusedxml==0.7.1
+webencodings==0.6.1

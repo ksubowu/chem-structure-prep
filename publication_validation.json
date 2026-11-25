@@ -1,0 +1,10 @@
+{
+  "tests": 23,
+  "unit_tests": "passed",
+  "wheel_build": "passed",
+  "native_libraries": 4,
+  "font_files": 9,
+  "license_files": 4,
+  "scope": "Standalone data preparation and annotation tool; no B2M or PyTorch runtime dependency",
+  "isolated_wheel_doctor": "passed outside both source repositories"
+}

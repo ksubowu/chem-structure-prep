@@ -1,0 +1,7 @@
+{
+  "source_id": "US07321045-20080122-C00112",
+  "smiles": "CC1=CC(OCCCC(=O)NCCNC(=O)[C@H](CSOOO)NC(=O)CC[C@H](N)C(=O)N[C@@H](CSOOO)C(=O)NCCNC(=O)CCCOC2=CC(C)=C(S(=O)(=O)N[C@@H](CNC(=O)C3=CC4=C(C=C3)N(CCCNC3=NC=CN3)N=C4)C(=O)O)C(C)=C2)=CC(C)=C1S(=O)(=O)N[C@@H](CNC(=O)C1=CC2=C(C=C1)N(CCCNC1=NC=CN1)N=C2)C(=O)O",
+  "font": "Times",
+  "relative_thickness": 2.0,
+  "regression": "Hidden carbon trial translates a wide scene; float32 atom coordinates differ from exact translation by ~1.2e-4 px. Rejected trial must not corrupt genuine layout."
+}

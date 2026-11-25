@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chem-structure-prep"
+version = "0.2.4"
+description = "Portable CSV/SMILES rendering, geometric annotations, grouped splits and balanced sampling"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["numpy>=1.24", "scipy>=1.11", "Pillow>=10", "opencv-python-headless>=4.8", "CairoSVG>=2.7", "cairocffi>=1.6", "fonttools>=4.45", "networkx>=3.2", "PyYAML>=6"]
+
+[project.scripts]
+chem-prepare = "chem_prep.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["chem_prep*"]
+
+[tool.setuptools.package-data]
+chem_prep = ["_licenses/*", "assets/*.json", "assets/fonts/*.ttf", "assets/example/*", "_vendor/indigo/lib/Linux/x64/*.so"]
+
+[project.urls]
+Repository = "https://github.com/ksubowu/chem-structure-prep"
+Model = "https://github.com/ksubowu/B2M"

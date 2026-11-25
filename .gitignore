@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venvs/
+build/
+dist/
+/runs/
+/dataset/
+/outputs/
+/chem_prep_demo/
+*.log
+*.tmp
+.env
+.env.*
+*.pt
+*.pth
